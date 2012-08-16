@@ -1,0 +1,8 @@
+E:\Users\Espen Ekvang\Documents\.NET kurs\1. ASP.NET\Demo\Bekk.Training.WebForms.Employees\Bekk.Training.WebForms.Employees\bin\Bekk.Training.WebForms.Employees.dll
+E:\Users\Espen Ekvang\Documents\.NET kurs\1. ASP.NET\Demo\Bekk.Training.WebForms.Employees\Bekk.Training.WebForms.Employees\bin\Bekk.Training.WebForms.Employees.pdb
+E:\Users\Espen Ekvang\Documents\.NET kurs\1. ASP.NET\Demo\Bekk.Training.WebForms.Employees\Bekk.Training.WebForms.Employees\obj\Debug\Bekk.Training.WebForms.Employees.dll
+E:\Users\Espen Ekvang\Documents\.NET kurs\1. ASP.NET\Demo\Bekk.Training.WebForms.Employees\Bekk.Training.WebForms.Employees\obj\Debug\Bekk.Training.WebForms.Employees.pdb
+E:\Users\Espen Ekvang\Documents\.NET kurs\aspnet\Demo\Bekk.Training.WebForms.Employees\Bekk.Training.WebForms.Employees\bin\Bekk.Training.WebForms.Employees.dll
+E:\Users\Espen Ekvang\Documents\.NET kurs\aspnet\Demo\Bekk.Training.WebForms.Employees\Bekk.Training.WebForms.Employees\bin\Bekk.Training.WebForms.Employees.pdb
+E:\Users\Espen Ekvang\Documents\.NET kurs\aspnet\Demo\Bekk.Training.WebForms.Employees\Bekk.Training.WebForms.Employees\obj\Debug\Bekk.Training.WebForms.Employees.dll
+E:\Users\Espen Ekvang\Documents\.NET kurs\aspnet\Demo\Bekk.Training.WebForms.Employees\Bekk.Training.WebForms.Employees\obj\Debug\Bekk.Training.WebForms.Employees.pdb

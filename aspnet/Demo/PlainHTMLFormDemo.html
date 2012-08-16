@@ -1,0 +1,21 @@
+<!DOCTYPE HTML/>
+<html>
+    <head>
+        <title>Plain HTML Demo</title>
+        <script type="text/javascript" language="javascript">
+            // <!CDATA[
+            function EventHandlerButton_Click() {
+                document.getElementById("InformationLabel").innerText = "Information label updated";
+            }
+            //]>
+        </script>
+    </head>
+
+    <body>
+        <form method="post" action="http://open.bekk.no">
+            <label id="InformationLabel"></label>                       
+            <br />
+            <button name="EventHandlerButton" type="button" value="Invoke an eventhandler" onclick="return EventHandlerButton_Click();">Click to update label</button>                        
+        </form>
+    </body>
+</html>
