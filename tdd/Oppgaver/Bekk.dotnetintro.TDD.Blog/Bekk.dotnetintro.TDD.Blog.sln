@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bekk.dotnetintro.TDD.Blog", "Bekk.dotnetintro.TDD.Blog\Bekk.dotnetintro.TDD.Blog.csproj", "{84A19E20-0119-4DDC-864E-C9534AB8593B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.UnitTest", "Bekk.dotnetintro.TDD.Blog.UnitTest\Blog.UnitTest.csproj", "{C988D646-7824-4CCE-95C7-2DBAFA0F3AB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9EDD9624-568D-450B-A6AA-5E797BB84359}"
+	ProjectSection(SolutionItems) = preProject
+		Bekk.dotnetintro.TDD.Blog.vsmdi = Bekk.dotnetintro.TDD.Blog.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{05731C24-D084-4E44-82B7-A3ED43EAAE4E}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Bekk.dotnetintro.TDD.Blog.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84A19E20-0119-4DDC-864E-C9534AB8593B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84A19E20-0119-4DDC-864E-C9534AB8593B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84A19E20-0119-4DDC-864E-C9534AB8593B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84A19E20-0119-4DDC-864E-C9534AB8593B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C988D646-7824-4CCE-95C7-2DBAFA0F3AB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C988D646-7824-4CCE-95C7-2DBAFA0F3AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C988D646-7824-4CCE-95C7-2DBAFA0F3AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C988D646-7824-4CCE-95C7-2DBAFA0F3AB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C988D646-7824-4CCE-95C7-2DBAFA0F3AB6} = {05731C24-D084-4E44-82B7-A3ED43EAAE4E}
+	EndGlobalSection
+EndGlobal

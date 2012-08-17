@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bekk.dotnetintro.TDD.Logger", "Bekk.dotnetintro.TDD.Logger\Bekk.dotnetintro.TDD.Logger.csproj", "{DAC8BCCC-E8BB-4A9D-ABE5-CB080A9440D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAC8BCCC-E8BB-4A9D-ABE5-CB080A9440D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC8BCCC-E8BB-4A9D-ABE5-CB080A9440D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC8BCCC-E8BB-4A9D-ABE5-CB080A9440D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC8BCCC-E8BB-4A9D-ABE5-CB080A9440D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
