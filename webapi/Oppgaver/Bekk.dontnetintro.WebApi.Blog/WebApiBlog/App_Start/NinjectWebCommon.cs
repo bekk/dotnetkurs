@@ -1,3 +1,5 @@
+using System.Web.Http;
+using Bekk.dontnetintro.WebApi.Blog.Ioc;
 using Bekk.dontnetintro.WebApi.Blog.Modules;
 
 [assembly: WebActivator.PreApplicationStartMethod(typeof(Bekk.dontnetintro.WebApi.Blog.App_Start.NinjectWebCommon), "Start")]
@@ -46,6 +48,9 @@ namespace Bekk.dontnetintro.WebApi.Blog.App_Start
             kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
             
             RegisterServices(kernel);
+
+            GlobalConfiguration.Configuration.DependencyResolver = new NinjectResolver(kernel);
+
             return kernel;
         }
 
