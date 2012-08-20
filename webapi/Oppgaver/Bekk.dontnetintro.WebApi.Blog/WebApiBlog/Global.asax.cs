@@ -2,6 +2,8 @@
 using System.Web.Optimization;
 using System.Web.Routing;
 using WebApiBlog;
+﻿using System.Web.Http;
+﻿using Bekk.dontnetintro.WebApi.Blog.App_Start;
 
 namespace Bekk.dontnetintro.WebApi.Blog
 {
@@ -13,8 +15,7 @@ namespace Bekk.dontnetintro.WebApi.Blog
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters, GlobalConfiguration.Configuration.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }

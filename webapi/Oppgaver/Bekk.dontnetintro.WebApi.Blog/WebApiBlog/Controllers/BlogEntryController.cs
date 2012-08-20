@@ -3,6 +3,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Bekk.dontnetintro.WebApi.Blog.Filters;
 using Bekk.dontnetintro.WebApi.Blog.Models;
 using Bekk.dontnetintro.WebApi.Blog.Repositories;
 
@@ -34,6 +35,7 @@ namespace Bekk.dontnetintro.WebApi.Blog.Controllers
             return blogEntry;
         }
 
+        [ValidationActionFilter]
         public HttpResponseMessage Post(BlogEntry blogEntry)
         {
             _repository.Insert(blogEntry);
