@@ -17,7 +17,7 @@ namespace Bekk.dotnetintro.Data.Ado
 
             query = "SELECT FirstName, LastName, Email FROM Person WHERE Id=@Id";
             Console.WriteLine(query);
-            ExecuteQuery(query, new List<SqlParameter> { new SqlParameter("@id", 1) });
+            ExecuteQuery(query, new List<SqlParameter> { new SqlParameter("@Id", 1) });
             Console.ReadLine();
 
             query = "UPDATE Person SET Email=@email WHERE Id=@Id";
