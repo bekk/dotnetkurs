@@ -6,17 +6,21 @@ namespace Bekk.dotnetintro.Data.NHibernate.Domain
     public class NHibernateSessionManager
     {
         private static ISessionFactory _sessionFactory;
+        private static readonly object LockObject = new object();
 
         private static ISessionFactory GetSessionFactory()
         {
-            if (_sessionFactory == null)
+            lock (LockObject)
             {
-                var configuration = new Configuration();
-                configuration.Configure();
-                configuration.AddAssembly(typeof (Car).Assembly);
-                _sessionFactory = configuration.BuildSessionFactory();
+                if (_sessionFactory == null)
+                {
+                    var configuration = new Configuration();
+                    configuration.Configure();
+                    configuration.AddAssembly(typeof (Car).Assembly);
+                    _sessionFactory = configuration.BuildSessionFactory();
+                }
+                return _sessionFactory;
             }
-            return _sessionFactory;
         }
 
         public static ISession OpenSession()
