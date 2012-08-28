@@ -4,6 +4,7 @@
     {
         private IEmailService _emailService;
 
+
         public BookingComponent(IEmailService emailService)
         {
             _emailService = emailService;
