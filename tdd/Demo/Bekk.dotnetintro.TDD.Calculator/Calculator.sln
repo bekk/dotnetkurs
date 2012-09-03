@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{B0DC673A-D243-4CCB-BC02-E3CCD5B8E540}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.UnitTest", "Calculator.UnitTest\Calculator.UnitTest.csproj", "{164D17E4-98E7-45F2-8894-2DC31A413343}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{51F2967F-49AF-40B1-B82C-26688DD0FBB4}"
+	ProjectSection(SolutionItems) = preProject
+		Calculator.vsmdi = Calculator.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Calculator.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0DC673A-D243-4CCB-BC02-E3CCD5B8E540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0DC673A-D243-4CCB-BC02-E3CCD5B8E540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0DC673A-D243-4CCB-BC02-E3CCD5B8E540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0DC673A-D243-4CCB-BC02-E3CCD5B8E540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{164D17E4-98E7-45F2-8894-2DC31A413343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{164D17E4-98E7-45F2-8894-2DC31A413343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{164D17E4-98E7-45F2-8894-2DC31A413343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{164D17E4-98E7-45F2-8894-2DC31A413343}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

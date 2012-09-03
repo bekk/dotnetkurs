@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B230D914-1417-49C4-809A-06036AAAEAD4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bekk.dotnetintro.TDD.NinjectConsole</RootNamespace>
+    <AssemblyName>Bekk.dotnetintro.TDD.NinjectConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ninject, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modules\DemoModule.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Library\Ninject\extensions\CommonServiceLocator.NinjectAdapter.dll" />
+    <Content Include="Library\Ninject\extensions\CommonServiceLocator.NinjectAdapter.pdb" />
+    <Content Include="Library\Ninject\LICENSE.txt" />
+    <Content Include="Library\Ninject\Ninject.dll" />
+    <Content Include="Library\Ninject\Ninject.pdb" />
+    <Content Include="Library\Ninject\Ninject.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bekk.dotnetintro.TDD.NinjectDemo\NinjectDemo.csproj">
+      <Project>{8A37D96D-6BDD-4C1C-A3FB-98A47699B4BF}</Project>
+      <Name>NinjectDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConsoleOutput\DemoConsoleOutput.csproj">
+      <Project>{9CA221BC-2574-4E8A-B340-E4365AF3B3CA}</Project>
+      <Name>DemoConsoleOutput</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoFileOutput\DemoFileOutput.csproj">
+      <Project>{1ACC678D-CF85-4606-9213-F237F24F86EA}</Project>
+      <Name>DemoFileOutput</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

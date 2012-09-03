@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging", "Bekk.dotnetintro.TDD.Logger\Logging.csproj", "{DAC8BCCC-E8BB-4A9D-ABE5-CB080A9440D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.UnitTest", "Bekk.dotnetintro.TDD.Logger.UnitTest\Logging.UnitTest.csproj", "{27B27819-94F6-4F7B-8952-BB17AD44B12E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C5C154BB-0C09-4802-8630-763451A6D98C}"
+	ProjectSection(SolutionItems) = preProject
+		Bekk.dotnetintro.TDD.Logger.vsmdi = Bekk.dotnetintro.TDD.Logger.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.IntegrationTest", "Bekk.dotnetintro.TDD.Logging.IntegrationTest\Logging.IntegrationTest.csproj", "{38666433-4B37-4C8C-A295-0CE11BFC22A2}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Bekk.dotnetintro.TDD.Logger.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAC8BCCC-E8BB-4A9D-ABE5-CB080A9440D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC8BCCC-E8BB-4A9D-ABE5-CB080A9440D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC8BCCC-E8BB-4A9D-ABE5-CB080A9440D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC8BCCC-E8BB-4A9D-ABE5-CB080A9440D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27B27819-94F6-4F7B-8952-BB17AD44B12E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B27819-94F6-4F7B-8952-BB17AD44B12E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B27819-94F6-4F7B-8952-BB17AD44B12E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B27819-94F6-4F7B-8952-BB17AD44B12E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38666433-4B37-4C8C-A295-0CE11BFC22A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38666433-4B37-4C8C-A295-0CE11BFC22A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38666433-4B37-4C8C-A295-0CE11BFC22A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38666433-4B37-4C8C-A295-0CE11BFC22A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
