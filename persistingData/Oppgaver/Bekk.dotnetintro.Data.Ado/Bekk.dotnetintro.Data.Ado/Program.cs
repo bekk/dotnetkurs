@@ -20,9 +20,9 @@ namespace Bekk.dotnetintro.Data.Ado
             ExecuteQuery(query, new List<SqlParameter> { new SqlParameter("@Id", 1) });
             Console.ReadLine();
 
-            query = "UPDATE Person SET Email=@email WHERE Id=@Id";
+            query = "UPDATE Person SET Email=@Email WHERE Id=@Id";
             Console.WriteLine(query);
-            ExecuteNonQuery(query, new List<SqlParameter> {new SqlParameter("@email","new@email.com"), new SqlParameter("@id", 1) });
+            ExecuteNonQuery(query, new List<SqlParameter> {new SqlParameter("@Email","new@email.com"), new SqlParameter("@Id", 1) });
             Console.ReadLine();
         }
 
@@ -33,14 +33,19 @@ namespace Bekk.dotnetintro.Data.Ado
             using (var connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                using (var command = connection.CreateCommand())
+                using (var transaction = connection.BeginTransaction())
                 {
-                    command.CommandType = CommandType.Text;
-                    command.CommandText = query;
-                    parameters.ForEach(parameter => command.Parameters.Add(parameter));
+                    using (var command = connection.CreateCommand())
+                    {
+                        command.Transaction = transaction;
+                        command.CommandType = CommandType.Text;
+                        command.CommandText = query;
+                        parameters.ForEach(parameter => command.Parameters.Add(parameter));
 
-                    var rowsAffected = command.ExecuteNonQuery();
-                    Console.WriteLine(string.Format("Rows affected by NonQuery {0}", rowsAffected));
+                        var rowsAffected = command.ExecuteNonQuery();
+                        Console.WriteLine(string.Format("Rows affected by NonQuery {0}", rowsAffected));
+                    }
+                    transaction.Commit();
                 }
             }
         }
