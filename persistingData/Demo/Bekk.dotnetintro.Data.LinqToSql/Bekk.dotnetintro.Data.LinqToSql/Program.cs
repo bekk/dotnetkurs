@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 
+
 namespace Bekk.dotnetintro.Data.LinqToSql
 {
     class Program
