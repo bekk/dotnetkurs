@@ -1,18 +1,20 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Bekk.dotnetintro.TDD.CalculatorDemo;
+using FluentAssertions;
+using NUnit.Framework;
 
-namespace Bekk.dotnetintro.TDD.Calculator.UnitTest
+namespace CalculatorDemo.UnitTest
 {
-    [TestClass]
+    [TestFixture]
     public class CalculatorTest
     {
-        [TestMethod]
+        [Test]
         public void Add_TwoNumbers_ReturnSumOfNumbers()
         {
             var calculator = new Calculator(); //arrange
 
             var result = calculator.Add(1, 2);
 
-            Assert.AreEqual(3, result);
+            result.Should().Be(3);
         }
     }
 }

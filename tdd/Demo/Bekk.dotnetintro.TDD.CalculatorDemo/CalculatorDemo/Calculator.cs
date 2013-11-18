@@ -1,4 +1,4 @@
-﻿namespace Bekk.dotnetintro.TDD.Calculator
+﻿namespace Bekk.dotnetintro.TDD.CalculatorDemo
 {
     public class Calculator
     {
