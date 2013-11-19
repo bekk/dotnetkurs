@@ -16,5 +16,6 @@ namespace CalculatorDemo.UnitTest
 
             result.Should().Be(3);
         }
+
     }
 }
