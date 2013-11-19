@@ -1,0 +1,39 @@
+﻿Oppgaver
+
+Opppgave 1
+Kjør testen som er laget for GetProducts() metoden. Hvordan kan man få testen til å passere uten å gjøre endringer i InventoryRepository?
+
+Oppgave 2
+Opprett en metode som skal brukes for å finne produkter som må bestilles.
+
+Bruk _inventoryRepository.GetAllProductIds() til å hente ut alle produkter. 
+Hent deretter ut antall av hvert produkt med _inventoryRepository.GetNumberOfProductItems. 
+Returner produkt-idene som har mindre enn 100 varer tilgjengelig
+
+Oppgave 3
+Opprett en metode som returnerer navnet på et produkt.
+
+Varenavnet vises ulike steder i applikasjonen, og ikke alle stedene er det nok tilgjengelig plass til å vise hele navnet. 
+Det må derfor være mulig å angi hvor mange tegn av navnet som skal vises.
+Navnet skal alltid vises med STORE BOKSTAVER
+
+Oppgave 4
+Lag en metode som oppdaterer antall av et produkt.
+
+Når nye varer leveres til butikken må antallet lagres. Man kan kun sette totalt antall varer for et produkt.
+Hent antall varer for ett produkt og oppdater dette med antall nye varer.
+Dersom et produkt ikke er registert i databasen skal det kastes en feil.
+
+
+Oppgave 5
+Når en vare skal selges må beholdningen oppdater, lag denne metoden.
+Metoden må sjekke at det finnes minst en vare igjen, trekke fra et produkt og oppdatere beholdningen.
+
+
+Oppgave 6
+Butikken lagrer jevnlig rapporter over varebeholdningen. Til dette bruker de en tredjepartskomponent (ExcelExport.dll)
+Hent alle produkter, navn og lagerbeholdning, og lagre dette med ExcelInventoryReport. Siden rapportene skal lages jevnlig må filnavnet være dagens dato.
+
+Hvordan kan denne testes når den ikke har noe interface man kan benytte? Hvordan vil du teste dagens dato i filnavn?
+
+Hint: new ExcelInventoryReport(). Referanse er lagt til.
