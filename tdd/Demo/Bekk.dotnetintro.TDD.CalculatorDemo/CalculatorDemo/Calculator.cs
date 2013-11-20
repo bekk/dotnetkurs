@@ -6,5 +6,10 @@
         {
             return a + b;
         }
+
+        public int Subtract(int i, int j)
+        {
+            return j -i;
+        }
     }
 }
