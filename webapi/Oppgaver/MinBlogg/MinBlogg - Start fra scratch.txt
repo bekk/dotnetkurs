@@ -1,0 +1,23 @@
+1. Lag et nytt prosjekt. Velg templates -> Web -> "ASP.NET Empty Web Application" i Visual Studio
+
+2. Kjør "Install-Package Microsoft.AspNet.WebApi" i Nuget Package Manager Console
+
+3. Legg til Global.asax (høyreklikk og velg add new item på prosjektet. Velg "Global Application Class")
+
+4. Legg til følgende i Application_Start metoden i Global.asax for å registrere default route:
+
+var config = GlobalConfiguration.Configuration;
+
+config.Routes.MapHttpRoute(
+    name: "DefaultApi",
+    routeTemplate: "api/{controller}/{id}",
+    defaults: new { id = RouteParameter.Optional }
+);
+
+5. Lag en ny mappe kalt "Controllers". Mappenavnet "Controllers" har spesiell betydning både i Web Api og .NET MVC.
+
+6. Lag en ny klasse BloggposterController i Controllers mappen som arver ApiController.
+
+7. Det kan være litt vanskelig å vite hvilken port den innebygde Web Serveren kjører på. Legg til en XML
+   eller bare en blank fil. Endre navnet på filen til "Index.htm". Når du nå trykker F5 så vil denne
+   filen åpnes i browser og du kan da se hva slags port serveren kjører på.
