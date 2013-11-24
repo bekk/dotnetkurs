@@ -18,6 +18,4 @@ config.Routes.MapHttpRoute(
 
 6. Lag en ny klasse BloggposterController i Controllers mappen som arver ApiController.
 
-7. Det kan være litt vanskelig å vite hvilken port den innebygde Web Serveren kjører på. Legg til en XML
-   eller bare en blank fil. Endre navnet på filen til "Index.htm". Når du nå trykker F5 så vil denne
-   filen åpnes i browser og du kan da se hva slags port serveren kjører på.
+7. Trykk F5
