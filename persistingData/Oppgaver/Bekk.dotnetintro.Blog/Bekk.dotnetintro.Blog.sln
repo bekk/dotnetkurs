@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bekk.dotnetintro.Blog.Data"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bekk.dotnetintro.Blog.Data.Migrations", "Bekk.dotnetintro.Blog.Data.Migrations\Bekk.dotnetintro.Blog.Data.Migrations.csproj", "{378AEF8E-5CD8-49F1-A307-BB8A0DDDD3B7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F025A2BE-DE9F-43FC-95A3-3000C9839E3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bekk.dotnetintro.Blog.Api.UnitTest", "test\Bekk.dotnetintro.Blog.Api.UnitTest\Bekk.dotnetintro.Blog.Api.UnitTest.csproj", "{425E30CA-756B-405C-8FB2-4C8627FB03DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +36,15 @@ Global
 		{378AEF8E-5CD8-49F1-A307-BB8A0DDDD3B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{378AEF8E-5CD8-49F1-A307-BB8A0DDDD3B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{378AEF8E-5CD8-49F1-A307-BB8A0DDDD3B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{425E30CA-756B-405C-8FB2-4C8627FB03DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{425E30CA-756B-405C-8FB2-4C8627FB03DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{425E30CA-756B-405C-8FB2-4C8627FB03DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{425E30CA-756B-405C-8FB2-4C8627FB03DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{425E30CA-756B-405C-8FB2-4C8627FB03DE} = {F025A2BE-DE9F-43FC-95A3-3000C9839E3B}
 	EndGlobalSection
 EndGlobal
