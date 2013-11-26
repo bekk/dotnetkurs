@@ -113,7 +113,7 @@
       <Project>{378aef8e-5cd8-49f1-a307-bb8a0dddd3b7}</Project>
       <Name>Bekk.dotnetintro.Blog.Data.Migrations</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Blog.dotnetintro.Blog.Data\Bekk.dotnetintro.Blog.Data.csproj">
+    <ProjectReference Include="..\Bekk.dotnetintro.Blog.Data\Bekk.dotnetintro.Blog.Data.csproj">
       <Project>{B74BB001-B456-4E74-B6FB-EEEC60F55F9D}</Project>
       <Name>Bekk.dotnetintro.Blog.Data</Name>
     </ProjectReference>
