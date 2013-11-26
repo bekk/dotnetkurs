@@ -1,4 +1,5 @@
 ﻿using Bekk.dotnetintro.Blog.Data.Repositories;
+using Blog.dotnetintro.Blog.Data.Repositories;
 using StructureMap;
 
 namespace Bekk.dotnetintro.Blog.DependencyResolution
