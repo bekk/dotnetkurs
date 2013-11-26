@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Blog.dotnetintro.Blog.Data.Domain;
+using Bekk.dotnetintro.Blog.Data.Domain;
 
-namespace Blog.dotnetintro.Blog.Data.Repositories
+namespace Bekk.dotnetintro.Blog.Data.Repositories
 {
     public class BlogPostRepository : IBlogPostRepository
     {

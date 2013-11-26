@@ -2,8 +2,8 @@
 using System.Net;
 using System.Web.Http;
 using Bekk.dotnetintro.Blog.ActionResults;
-using Blog.dotnetintro.Blog.Data.Domain;
-using Blog.dotnetintro.Blog.Data.Repositories;
+using Bekk.dotnetintro.Blog.Data.Domain;
+using Bekk.dotnetintro.Blog.Data.Repositories;
 
 namespace Bekk.dotnetintro.Blog.Controllers
 {

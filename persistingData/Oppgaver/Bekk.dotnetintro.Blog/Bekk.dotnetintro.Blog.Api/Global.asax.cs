@@ -2,6 +2,8 @@
 using System.Web.Http;
 using Bekk.dotnetintro.Blog.DependencyResolution;
 using WebApiContrib.IoC.StructureMap;
+using Bekk.dotnetintro.Blog.Data.Migrations;
+using System.Configuration;
 
 namespace Bekk.dotnetintro.Blog
 {
@@ -19,6 +21,8 @@ namespace Bekk.dotnetintro.Blog
             );
 
             config.DependencyResolver = new StructureMapResolver(ApiContainer.Configure());
+
+            Migrate.MigrateToLatestVersion(ConfigurationManager.ConnectionStrings["BlogDataConnectionString"].ConnectionString);
         }
 
         protected void Session_Start(object sender, EventArgs e)

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Blog.dotnetintro.Blog.Data.Domain;
+using Bekk.dotnetintro.Blog.Data.Domain;
 
-namespace Blog.dotnetintro.Blog.Data.Repositories
+namespace Bekk.dotnetintro.Blog.Data.Repositories
 {
     public interface IBlogPostRepository
     {
